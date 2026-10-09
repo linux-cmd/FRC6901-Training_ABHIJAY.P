@@ -5,7 +5,7 @@
 package frc.robot;
 
 import edu.wpi.first.wpilibj.GenericHID;
-import edu.wpi.first.wpilibj.controller.PIDController;
+import edu.wpi.first.math.controller.PIDController;
 import edu.wpi.first.wpilibj.XboxController;
 import frc.robot.commands.ExampleCommand;
 import frc.robot.subsystems.RomiDrivetrain;
@@ -20,12 +20,13 @@ import edu.wpi.first.wpilibj2.command.SequentialCommandGroup;
  * periodic methods (other than the scheduler calls). Instead, the structure of the robot (including
  * subsystems, commands, and button mappings) should be declared here.
  */
+@SuppressWarnings("removal")
 public class RobotContainer {
   // The robot's subsystems and commands are defined here...
   private final RomiDrivetrain m_romiDrivetrain = new RomiDrivetrain();
 
   // HINT: You need to set this up.
-  private final PIDCommand m_autoCommand;
+  private final PIDCommand m_autoCommand = null;
 
   /** The container for the robot. Contains subsystems, OI devices, and commands. */
   public RobotContainer() {
