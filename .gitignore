@@ -1,0 +1,23 @@
+# Local VS Code workspace selections (the project folders remain in the repo)
+*.code-workspace
+
+# Gradle and Java build output
+**/.gradle/
+**/build/
+**/bin/
+**/out/
+*.class
+
+# Local simulator state and logs
+**/simgui*.json
+**/networktables.json
+**/*-window.json
+**/logs/
+
+# Operating system files
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Local helper for staging and uploading only Project 1
+/upload-project1.ps1
