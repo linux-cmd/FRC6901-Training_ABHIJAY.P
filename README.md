@@ -1,66 +1,42 @@
-# FRC Team 6901 Training Repo
+# FRC 6901 Programming Training
 
-This repository will house several projects that should be completed to familiarize yourself with programming for the FIRST Robotics Competition.
+This repository contains hands-on Java projects for learning FRC robot programming. Each project has its own Gradle/WPILib project and exercise instructions. Work through them in order, and write your own solutions in the project code.
 
-## General Installation/Setup Instructions
-Here are some important things you need to download in order to properly program your robot.
-### Github
-[Create](https://github.com/join) you Github account.
+## Start here
 
-### Git
-[Download](https://git-scm.com/downloads) Git
+Begin with the [Project 1 Romi Drive course](Project%201%20Basic%20Romi%20Drive-Imported/README.md). It introduces Java robot code, controller inputs, simulation, and the project build one step at a time.
 
-### GitHub Desktop
-[Download](https://desktop.github.com/) GitHub Desktop
+## Project map
 
-### WPILib
-Before you can start programming, you need to install the libraries and IDE for FRC. [Here's](https://docs.wpilib.org/en/stable/docs/zero-to-robot/step-2/wpilib-setup.html) a step by step guide.
+| Project | Topic | Instructions |
+| --- | --- | --- |
+| 1 | Romi driving, controller input, and simulation | [Project 1 course](Project%201%20Basic%20Romi%20Drive-Imported/README.md) |
+| 2 | Robot speed modes and a basic state machine | [Project 2](Project%202%20Basic%20State%20Machine/README.md) |
+| 3 | Command-based programming | [Project 3](Project%203%20Command%20Based/README.md) |
+| 4.1 | Timed autonomous, non-command-based | [Project 4.1](Project%204/Project%204.1%20Basic%20Autonomous/README.md) |
+| 4.2 | Timed autonomous, command-based | [Project 4.2](Project%204/Project%204.2%20Basic%20Autonomous/README.md) |
+| 5 | Closed-loop control and PID | [Project 5](Project%205%20Closed%20Loop%20Control/README.md) |
 
-Additionally, if you own a Windows computer, you can [install other tools](https://docs.wpilib.org/en/stable/docs/zero-to-robot/step-2/frc-game-tools.html) to run code on real robots.
+The active training projects use WPILib/GradleRIO 2026 and Java 17. The older Project 1 copy is kept in the [archive](archive/Project%201%20Basic%20Romi%20Drive%20-%20WPILib%202021/README.md) for reference; use the Project 1 course above instead.
 
-## How to use this repo
-You will fork this repository and keep a local clone of your forked repository. This system will allow you to work on your own code in addition to being able to download new projects that you can work on while practicing your Git skills.
+## Setup
 
-Every time you finish a project, you can push your changes onto Github.
+Install [WPILib](https://docs.wpilib.org/en/stable/docs/zero-to-robot/step-2/wpilib-setup.html) for the season used by the projects. On Windows, follow the WPILib setup guide for installing the required FRC tools too. Each project contains its own Gradle wrapper, so run Gradle commands from that project's folder.
 
-[Here's](https://youtu.be/IauwGUQovb4) a video that outlines this process. NOTE: You will need a good understanding of Git, make sure you look at those resources.
+Open and work on one robot project at a time. Several projects contain a class named `frc.robot.Main`; opening every project as one Java workspace can make the Java tools unsure which robot program to run. The `.code-workspace` files used on the original development computer are intentionally not part of GitHub because they contain computer-specific Java paths. You can open a project folder directly in VS Code or create your own workspace file.
 
-## Resources
+## Git workflow
 
-The following are a collection of resources that are helpful with Java and FRC Programming.
+This repository is a personal fork of the team training source. The intended remotes are:
 
-### General Java Resources
+- `origin`: your GitHub copy, where you push your work;
+- `upstream`: the original team repository, where you get new training material.
 
-Here are general resources for learning different concepts regarding Java. They are divided into three parts: Basic Fundamentals which covers the basic syntax and concepts regarding Java, Object Oriented Code which covers the important topics relating to Object Oriented programming in Java, and Advanced Java Concepts which covers additional concepts such as lambdas and design patterns.
-#### Basic Fundamentals
-- [Variables](https://www.codecademy.com/courses/learn-java/lessons/learn-java-variables/)
-- [Conditionals and Control Flow](https://www.codecademy.com/courses/learn-java/lessons/java-conditionals-and-control-flow)
-- [Switch Statements](https://www.w3schools.com/java/java_switch.asp)
+For the recommended branch, review, and commit process, see [CONTRIBUTING.md](CONTRIBUTING.md). Keep commits small and focused, and check `git status` before committing. Build output, simulator state, and personal workspace files are ignored by `.gitignore`.
 
-#### Object Oriented Code
-- [Object Oriented Programming with Java](https://www.codecademy.com/learn/java-object-oriented-programming)
-- [Inheritance, Polymorphism](https://www.codecademy.com/courses/learn-java/lessons/java-inheritance-and-polymorphism)
-- [Interfaces](https://www.geeksforgeeks.org/interfaces-in-java/)
-- [Abstract Classes](https://www.geeksforgeeks.org/abstract-classes-in-java/)
+## References
 
-#### Advanced Java Concepts
-- [Lambdas](w3schools.com/java/java_lambda.asp)
-- [State Machines](https://www.itemis.com/en/yakindu/state-machine/documentation/user-guide/overview_what_are_state_machines)
-- [Singletons](https://en.wikipedia.org/wiki/Singleton_pattern#:~:text=In%20software%20engineering%2C%20the%20singleton,mathematical%20concept%20of%20a%20singleton.)
-- [Command Pattern](https://docs.wpilib.org/en/stable/docs/software/commandbased/what-is-command-based.html)
-
-### Git/Github Resources
-- [Github Tutorials](https://guides.github.com/)
-- [Git Tutorials](https://www.codecademy.com/learn/learn-git)
-
-### FRC Resources
-These are FRC resources provided by WPILib, the open source library that we utilize for programming in Java.
-- [FRC Docs](https://docs.wpilib.org/en/stable/index.html)
-- [FRC Java Doxygen](https://first.wpi.edu/wpilib/allwpilib/docs/release/java/index.html)
-- [FRC Java Examples](https://github.com/wpilibsuite/allwpilib/tree/main/wpilibjExamples/src/main/java/edu/wpi/first/wpilibj/examples)
-
-### 6901 2020 Presentations
-https://drive.google.com/drive/folders/1yjwFbbiTtUnBOTWPiMXydjgDlf6OWUSa?usp=sharing (some of the recordings were deleted)
-
-### Vendor Documentation
-For the sake of completeness, vendor documentation is being added here, but you probably won't need it for any of these projects.
+- [WPILib documentation](https://docs.wpilib.org/en/stable/)
+- [WPILib Java API](https://first.wpi.edu/wpilib/allwpilib/docs/release/java/index.html)
+- [WPILib Java examples](https://github.com/wpilibsuite/allwpilib/tree/main/wpilibjExamples/src/main/java/edu/wpi/first/wpilibj/examples)
+- [Team 6901 programming presentations](https://drive.google.com/drive/folders/1yjwFbbiTtUnBOTWPiMXydjgDlf6OWUSa?usp=sharing)
